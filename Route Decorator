@@ -1,0 +1,29 @@
+We can add some rules to controller and method decorator
+
+import { Controller, Get, Post } from '@nestjs/common';
+
+@Controller('messages')
+export class MessagesController {
+
+  @Get('GetMessage')
+  getMessage(){
+    return "hi";
+  }
+
+  @Post('Insert')
+  createMessage(){
+
+  }
+
+  @Get()
+  getMessageById(){
+
+  }
+}
+
+
+1. Whenever we add decorator to the controoler then it is applicable for all the methods in that controller.
+2. The method decorator will take place after the controller decorator
+3. In the abov example if we want to get the response of the Getmessage the we need to browse the route 
+    https://localhost:3000/message/GetMessage
+    
