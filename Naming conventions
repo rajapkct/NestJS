@@ -1,0 +1,8 @@
+
+
+Naming Conventions
+
+1. One class per file
+2. Class names should include the kind of the things which we are creating ( product.controller.ts)
+3. Name of the class and name of the file should always match.
+4. File Template : name_type_of_thing.ts
